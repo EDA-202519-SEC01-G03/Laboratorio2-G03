@@ -58,11 +58,8 @@ def print_menu():
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
     # Agregue la opción 3 para cargar los tags de los libros.
     # Pueede guiarse de las opciones 1 y 2.
-<<<<<<< HEAD
-    print("3- Cargar los tags de Libros")
-=======
+
     print("3- Cargar Tags de Libros")
->>>>>>> Est-1
     print("0- Salir")
 
 
@@ -101,17 +98,15 @@ def load_books_tags(control):
     :type app: logic
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-<<<<<<< HEAD
     
     
-=======
+
     booktags = logic.load_books_tags(control, 
                                      "GoodReads/book_tags-small.csv")
     
     return booktags
     pass
 
->>>>>>> Est-1
 
 def first_book(control):
     """
@@ -128,7 +123,7 @@ def last_book(app):
     """
     Devuelve el último libro cargado en el conjunto de libros
     """
-    last = logic.last_book(control)
+    last = logic.last_book(app)
     return last
 
 
@@ -159,7 +154,7 @@ def main():
             print("Primer libro cargado:\n" + str(first) + "\n")
 
             # TODO: Mods de Est-2 en el Lab 2
-            last = last = last_book(app)
+            last = last_book(app)
             print("Último libro cargado:\n" + str(last) + "\n")
 
         elif int(inputs[0]) == 2:
