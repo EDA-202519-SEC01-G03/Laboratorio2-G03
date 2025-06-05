@@ -97,8 +97,8 @@ def load_books_tags(app):
     :type app: logic
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
-
+    
+    
 
 def first_book(app):
     """
@@ -113,7 +113,8 @@ def last_book(app):
     """
     Devuelve el último libro cargado en el conjunto de libros
     """
-    pass
+    last = logic.last_book(control)
+    return last
 
 
 # Se crea el controlador asociado a la vista
@@ -142,7 +143,8 @@ def main():
             first = None
 
             # TODO: Mods de Est-2 en el Lab 2
-            last = None
+            last = last = last_book(app)
+            print("Último libro cargado:\n" + str(last) + "\n")
 
         elif int(inputs[0]) == 2:
             print("Cargando información de tags....")
