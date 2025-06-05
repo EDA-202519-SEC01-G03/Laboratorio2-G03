@@ -72,7 +72,7 @@ def load_books(app):
     :type app: logic
     """
     books = logic.load_books(app,
-                             "GoodReads/books-small.csv")
+                             "GoodReads/books.csv")
     return books
 
 
@@ -102,7 +102,7 @@ def load_books_tags(control):
     
 
     booktags = logic.load_books_tags(control, 
-                                     "GoodReads/book_tags-small.csv")
+                                     "GoodReads/book_tags.csv")
     
     return booktags
     pass
