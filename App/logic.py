@@ -28,6 +28,7 @@
 
 import csv
 import os
+import model
 
 # Importar el modulo de la estructura de datos set
 from DataStructures import Set as set
