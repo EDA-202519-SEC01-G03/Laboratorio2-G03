@@ -25,6 +25,8 @@
  * Andres Rodriguez - Última version
  """
 
+# Version final 
+
 import sys
 import App.logic as logic
 
